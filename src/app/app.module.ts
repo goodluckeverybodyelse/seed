@@ -14,6 +14,8 @@ import { FaqComponent } from './components/faq.component';
 import { HomeComponent } from './components/home/home.component';
 import { AuthService } from './shared/auth.service';
 import { environment } from '../environments/environment';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const ROUTES: Routes = [
 {path: 'home', component: HomeComponent},
@@ -29,7 +31,9 @@ const ROUTES: Routes = [
     NotFoundComponent,
     AboutComponent,
     FaqComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     RouterModule.forRoot(ROUTES),
